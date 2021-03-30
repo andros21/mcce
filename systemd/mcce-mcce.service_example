@@ -1,0 +1,17 @@
+[Unit]
+Description=MCCE Serial Read Service
+Wants=network-online.target
+After=network.target network-online.target
+OnFailure=@MAIL
+
+[Service]
+Type=simple
+User=mcce
+Group=mcce
+WorkingDirectory=@WD
+ExecStart=@PY day_loop.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
