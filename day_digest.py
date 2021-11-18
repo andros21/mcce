@@ -23,6 +23,7 @@
 import datetime
 import os
 import sqlite3
+import sys
 
 import numpy as np
 import pandas as pd
@@ -87,8 +88,13 @@ if __name__ == "__main__":
 
     # compute (yester)day average over the total values collected
     day_avg = np.round(df.sum() * (5.0 / (3600.0 * 1000.0)), 2)[0]
-    # over-write the adjusted day history file
-    df.to_csv(f'days/{bdate.strftime("%Y-%m-%d")}', header=None, index=False)
 
-    df = resample_df(bdate, df, fixed_day_size, resolution)
-    refresh_db(db_uri, bdate, df, day_avg)
+    if day_avg > 0:
+        # over-write the adjusted day history file
+        df.to_csv(f'days/{bdate.strftime("%Y-%m-%d")}', header=None, index=False)
+
+        df = resample_df(bdate, df, fixed_day_size, resolution)
+        refresh_db(db_uri, bdate, df, day_avg)
+    else:
+        print(f"[Error] {bdate} recorded zero power consumption!")
+        sys.exit(1)
