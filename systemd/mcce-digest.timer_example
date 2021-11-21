@@ -3,7 +3,6 @@ Description=MCCE Serial Digest Timer
 
 [Timer]
 OnCalendar=*-*-* @HH:MM:SS
-Persistent=true
 
 [Install]
 WantedBy=timers.target

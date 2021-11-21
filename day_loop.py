@@ -18,6 +18,7 @@
 
 import codecs
 import datetime
+import os
 import subprocess
 import time
 import timeit
@@ -86,4 +87,6 @@ def looper(cv=0):
 
 if __name__ == "__main__":
     ser = serial.Serial("/dev/ttyUSB0", 9600)
+    if not os.path.exists("days"):
+        os.makedirs("days")
     looper()
