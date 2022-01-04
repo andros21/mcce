@@ -1,0 +1,16 @@
+[Unit]
+Description=MCCE Serial Drop Service
+Wants=network-online.target
+After=network.target network-online.target
+OnFailure=@MAIL
+
+[Service]
+Type=oneshot
+User=mcce
+Group=mcce
+WorkingDirectory=@WD
+Environment="DATABASE_URL=@DB"
+ExecStart=@PY year_drop.py
+
+[Install]
+WantedBy=multi-user.target
