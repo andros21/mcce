@@ -72,6 +72,10 @@ def refresh_db(uri, date, df, davg):
     # upload yesterday average
     dfa = pd.DataFrame([davg], index=[date.strftime("%Y-%m-%d")], columns=["kWh"])
     dfa.to_sql("avg", engine, if_exists="append")
+    if "postgresql://" in uri:
+        engine.dispose()
+    else:
+        engine.close()
 
 
 if __name__ == "__main__":
