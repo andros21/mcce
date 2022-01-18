@@ -1,6 +1,7 @@
 bin
-lib
 days
-share
-include
 etc
+include
+lib
+pyvenv.cfg
+share
