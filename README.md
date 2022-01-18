@@ -13,17 +13,17 @@ So I'd like to turn it into something more advanced:
 * Parse the instantaneous values using a Raspberry Pi (im my case a Pi 2) with python script reading from USB serial connector
 
   > **O:** the first difficulty was to understand how to start the serial flow after the serial connection ... yes, the device not stream nothing by default, a particolar hex code must be send to it to start the bytes streaming. After a little reverse engineering using wireshark usb tool, the code has been found.
-  
+
   > **O:** the second difficulty was to understand how to read the bytes flow and convert it to decimal values, that must be equal to the power consumptions show by the device display.
-  
+
   Look at `day_loop.py` for the solutions
-  
+
 * Notify with an alarm tone, when the instantaneous value reach the cap (in my case 4.2 kWh for a max of few minutes) imposed by electricity contract provider
 
   Below the wiring scheme needed to use `alarm4200.py`
-  
+
   <img src="https://user-images.githubusercontent.com/58751603/113004677-133e0e80-9174-11eb-96f6-16f800fbacd1.png" alt="drawing" width="430px"/>
-  
+
   Components:
   * 12V 1A DC
   * Buzzer audio
@@ -33,13 +33,13 @@ So I'd like to turn it into something more advanced:
 * Record at the end of the day (midnight) inside database:
   * electric power consumption history with different time resolution
   * electric consumption average
-  
+
    Look at `day_digest.py`
-   
+
 * With these stats stored, to visualize/analyze them I created simple [dash-app](https://github.com/andros21/pwrApp)
-   
+
 ## :rocket: Getting started
-  
+
 The idea is to use a main service `mcce-mcce.service` that must always run, executing `day_loop.py` and only once a day service `mcce-digest.service` to digest/store the power consumption recorded during the day, executing `day_digest.py`
 
 A little description for the last one, it can be started using scheduler as `cron` or more easily using `systemd-timer`, as I do, linked with the service. The are two environment variables that must be set inside `mcce-digest.service`:
@@ -63,7 +63,7 @@ Steps to run repo/project:
    ```
    (mcce) pip install -r requirements.txt
    ```
-3. Copy systemd service template files inside `/etc/systemd/system/` 
+3. Copy systemd service template files inside `/etc/systemd/system/`
 4. Change file permissions, that must be `-rw-r-----  root root`
 5. Configure them, edit them as you need/want
 6. Reload new unit files:
@@ -78,8 +78,8 @@ Steps to run repo/project:
    ```
    sudo systemctl enable --now mcce-digest.timer
    ```
-   
+
    > **W:** not select an hour before midnight, for `mcce-digest.timer`
-   
+
 9. Check with some `systemctl status` or using `journalctl` if everything went well
 10. Enjoy :smile: and not forget to check out related web UI repo [pwrApp](https://github.com/andros21/pwrApp)
