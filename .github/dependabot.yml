@@ -8,3 +8,4 @@ updates:
     ignore:
       - dependency-name: "RPi.GPIO"
     rebase-strategy: "disabled"
+    open-pull-requests-limit: 12
