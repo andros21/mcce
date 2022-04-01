@@ -1,6 +1,6 @@
 future==0.18.2
 iso8601==1.0.2
-numpy==1.22.2
+numpy==1.22.3
 pandas==1.4.1
 psycopg2==2.9.3
 pyserial==3.5
