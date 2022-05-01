@@ -1,0 +1,230 @@
+[[package]]
+name = "greenlet"
+version = "1.1.2"
+description = "Lightweight in-process concurrent programming"
+category = "main"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
+
+[package.extras]
+docs = ["sphinx"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "numpy"
+version = "1.22.3"
+description = "NumPy is the fundamental package for array computing with Python."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "pandas"
+version = "1.4.2"
+description = "Powerful data structures for data analysis, time series, and statistics"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+numpy = [
+    {version = ">=1.18.5", markers = "platform_machine != \"aarch64\" and platform_machine != \"arm64\" and python_version < \"3.10\""},
+    {version = ">=1.19.2", markers = "platform_machine == \"aarch64\" and python_version < \"3.10\""},
+    {version = ">=1.20.0", markers = "platform_machine == \"arm64\" and python_version < \"3.10\""},
+    {version = ">=1.21.0", markers = "python_version >= \"3.10\""},
+]
+python-dateutil = ">=2.8.1"
+pytz = ">=2020.1"
+
+[package.extras]
+test = ["hypothesis (>=5.5.3)", "pytest (>=6.0)", "pytest-xdist (>=1.31)"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "psycopg2"
+version = "2.9.3"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "pyserial"
+version = "3.5"
+description = "Python Serial Port Extension"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+cp2110 = ["hidapi"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.2"
+description = "Extensions to the standard Python datetime module"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+
+[package.dependencies]
+six = ">=1.5"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "pytz"
+version = "2022.1"
+description = "World timezone definitions, modern and historical"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "rpi.gpio"
+version = "0.7.1"
+description = "A module to control Raspberry Pi GPIO channels"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[[package]]
+name = "sqlalchemy"
+version = "1.4.36"
+description = "Database Abstraction Library"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
+
+[package.dependencies]
+greenlet = {version = "!=0.4.17", markers = "python_version >= \"3\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\")"}
+
+[package.extras]
+aiomysql = ["greenlet (!=0.4.17)", "aiomysql"]
+aiosqlite = ["typing-extensions (!=3.10.0.1)", "greenlet (!=0.4.17)", "aiosqlite"]
+asyncio = ["greenlet (!=0.4.17)"]
+asyncmy = ["greenlet (!=0.4.17)", "asyncmy (>=0.2.3,!=0.2.4)"]
+mariadb_connector = ["mariadb (>=1.0.1)"]
+mssql = ["pyodbc"]
+mssql_pymssql = ["pymssql"]
+mssql_pyodbc = ["pyodbc"]
+mypy = ["sqlalchemy2-stubs", "mypy (>=0.910)"]
+mysql = ["mysqlclient (>=1.4.0,<2)", "mysqlclient (>=1.4.0)"]
+mysql_connector = ["mysql-connector-python"]
+oracle = ["cx-oracle (>=7,<8)", "cx-oracle (>=7)"]
+postgresql = ["psycopg2 (>=2.7)"]
+postgresql_asyncpg = ["greenlet (!=0.4.17)", "asyncpg"]
+postgresql_pg8000 = ["pg8000 (>=1.16.6)"]
+postgresql_psycopg2binary = ["psycopg2-binary"]
+postgresql_psycopg2cffi = ["psycopg2cffi"]
+pymysql = ["pymysql (<1)", "pymysql"]
+sqlcipher = ["sqlcipher3-binary"]
+
+[package.source]
+type = "legacy"
+url = "https://www.piwheels.org/simple"
+reference = "piwheels"
+
+[metadata]
+lock-version = "1.1"
+python-versions = ">=3.9,<3.11"
+content-hash = "6ae8ab248d1ee69d5c6dedd7da1c8b122f8da02bd8314fc41174cde1bec51f7b"
+
+[metadata.files]
+greenlet = [
+    {file = "greenlet-1.1.2-cp35-cp35m-linux_armv6l.whl", hash = "sha256:8f7b240fb2e4950d61afeaaa51ab8a1812ed9a4778bb45bf121c21b4b37d72d7"},
+    {file = "greenlet-1.1.2-cp35-cp35m-linux_armv7l.whl", hash = "sha256:8f7b240fb2e4950d61afeaaa51ab8a1812ed9a4778bb45bf121c21b4b37d72d7"},
+    {file = "greenlet-1.1.2-cp37-cp37m-linux_armv6l.whl", hash = "sha256:bf28533bb6eaac39604fa975b9fd580d2ec0aff5f2f06dbfdeb106b361066cdf"},
+    {file = "greenlet-1.1.2-cp37-cp37m-linux_armv7l.whl", hash = "sha256:bf28533bb6eaac39604fa975b9fd580d2ec0aff5f2f06dbfdeb106b361066cdf"},
+    {file = "greenlet-1.1.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:f6dd4fe16556514c81b440cdb3a723a47464705ee56597f892d74ffa77b2796c"},
+    {file = "greenlet-1.1.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:f6dd4fe16556514c81b440cdb3a723a47464705ee56597f892d74ffa77b2796c"},
+]
+numpy = [
+    {file = "numpy-1.22.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:82df998306893fcabebce6f0a86a87b10b0486de08dde77423ef81b37da0b3ba"},
+    {file = "numpy-1.22.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:82df998306893fcabebce6f0a86a87b10b0486de08dde77423ef81b37da0b3ba"},
+]
+pandas = [
+    {file = "pandas-1.4.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:cc455ba74ca8442f70e48f2c70628b2281e5b345864bf5f1d90b20e7135d7007"},
+    {file = "pandas-1.4.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:cc455ba74ca8442f70e48f2c70628b2281e5b345864bf5f1d90b20e7135d7007"},
+]
+psycopg2 = [
+    {file = "psycopg2-2.9.3-cp37-cp37m-linux_armv6l.whl", hash = "sha256:36ceaf32c01b370a814666ce42250963118c7770e88676399ea7b1b9edb792f6"},
+    {file = "psycopg2-2.9.3-cp37-cp37m-linux_armv7l.whl", hash = "sha256:36ceaf32c01b370a814666ce42250963118c7770e88676399ea7b1b9edb792f6"},
+    {file = "psycopg2-2.9.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:70b7ec3da97c25180541748b35af546a2fc2692ee26fd751092b55a1b6952d1e"},
+    {file = "psycopg2-2.9.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:70b7ec3da97c25180541748b35af546a2fc2692ee26fd751092b55a1b6952d1e"},
+]
+pyserial = [
+    {file = "pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"},
+]
+python-dateutil = [
+    {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
+]
+pytz = [
+    {file = "pytz-2022.1-py3-none-any.whl", hash = "sha256:d7c0502dc1bc5e1a1a447a7527f99ddf7a302c0f83367ed442b6b3c38c38286d"},
+]
+"rpi.gpio" = [
+    {file = "RPi.GPIO-0.7.1-cp35-cp35m-linux_armv6l.whl", hash = "sha256:5073d1972727cfad38a1a42f02da91dc41f137679290aa804ab6c410168347ac"},
+    {file = "RPi.GPIO-0.7.1-cp35-cp35m-linux_armv7l.whl", hash = "sha256:5073d1972727cfad38a1a42f02da91dc41f137679290aa804ab6c410168347ac"},
+    {file = "RPi.GPIO-0.7.1-cp37-cp37m-linux_armv6l.whl", hash = "sha256:e5dfec2c4ccb7dbe9eef3dfc76a3b04121fc62d77fd8fbe1a8e841468a1b0c4c"},
+    {file = "RPi.GPIO-0.7.1-cp37-cp37m-linux_armv7l.whl", hash = "sha256:e5dfec2c4ccb7dbe9eef3dfc76a3b04121fc62d77fd8fbe1a8e841468a1b0c4c"},
+    {file = "RPi.GPIO-0.7.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:231f6142c25975a7e39b96faf4905f05f97dba6809e8c5f0d58f284b35b4b821"},
+    {file = "RPi.GPIO-0.7.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:231f6142c25975a7e39b96faf4905f05f97dba6809e8c5f0d58f284b35b4b821"},
+]
+six = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+]
+sqlalchemy = [
+    {file = "SQLAlchemy-1.4.36-cp37-cp37m-linux_armv6l.whl", hash = "sha256:2030d983a2f541ff47de557dbbbeb4fcecf0edfcc74340cf0b31d3e381569dd5"},
+    {file = "SQLAlchemy-1.4.36-cp37-cp37m-linux_armv7l.whl", hash = "sha256:2030d983a2f541ff47de557dbbbeb4fcecf0edfcc74340cf0b31d3e381569dd5"},
+    {file = "SQLAlchemy-1.4.36-cp39-cp39-linux_armv6l.whl", hash = "sha256:bf9472a75af5e1398f51ac3b8f4422548614ad5656e3182e2a8825f9968af4df"},
+    {file = "SQLAlchemy-1.4.36-cp39-cp39-linux_armv7l.whl", hash = "sha256:bf9472a75af5e1398f51ac3b8f4422548614ad5656e3182e2a8825f9968af4df"},
+]

@@ -61,20 +61,20 @@ Steps to run repo/project:
    ```
 2. Create a python environment with packages needed
    ```
-   (mcce) pip install -r requirements.txt
+   poetry install --no-root --no-dev
    ```
-3. Copy systemd service template files inside `/etc/systemd/system/`
-4. Change file permissions, that must be `-rw-r-----  root root`
-5. Configure them, edit them as you need/want
-6. Reload new unit files:
+4. Copy systemd service template files inside `/etc/systemd/system/`
+5. Change file permissions, that must be `-rw-r-----  root root`
+6. Patch them, edit them as you need/want
+7. Reload new unit files:
    ```
    sudo systemctl daemon-reload
    ```
-7. Enable and start he main service
+8. Enable and start he main service
    ```
    sudo systemctl enable --now mcce-mcce.service
    ```
-8. Enable and start the timer that will be triggered at the specify hour/minute, responsible of the related service activation
+9. Enable and start the timer that will be triggered at the specify hour/minute, responsible of the related service activation
    ```
    sudo systemctl enable --now mcce-digest.timer
    ```

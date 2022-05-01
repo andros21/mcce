@@ -4,8 +4,4 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "monthly"
-    ignore:
-      - dependency-name: "RPi.GPIO"
-    rebase-strategy: "disabled"
-    open-pull-requests-limit: 12
+      interval: "daily"
