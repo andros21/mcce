@@ -9,4 +9,4 @@ pytz==2022.1
 PyYAML==6.0
 RPi.GPIO==0.7.0
 serial==0.0.97
-SQLAlchemy==1.4.34
+SQLAlchemy==1.4.36
