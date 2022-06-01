@@ -139,7 +139,7 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "1.4.36"
+version = "1.4.37"
 description = "Database Abstraction Library"
 category = "main"
 optional = false
@@ -163,7 +163,7 @@ mysql_connector = ["mysql-connector-python"]
 oracle = ["cx-oracle (>=7,<8)", "cx-oracle (>=7)"]
 postgresql = ["psycopg2 (>=2.7)"]
 postgresql_asyncpg = ["greenlet (!=0.4.17)", "asyncpg"]
-postgresql_pg8000 = ["pg8000 (>=1.16.6)"]
+postgresql_pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
 postgresql_psycopg2binary = ["psycopg2-binary"]
 postgresql_psycopg2cffi = ["psycopg2cffi"]
 pymysql = ["pymysql (<1)", "pymysql"]
@@ -177,7 +177,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "6ae8ab248d1ee69d5c6dedd7da1c8b122f8da02bd8314fc41174cde1bec51f7b"
+content-hash = "1e4ef205e22b03b2ce983d7454d2d8805df6523c15a599aed4ae91e9d6b063c1"
 
 [metadata.files]
 greenlet = [
@@ -223,8 +223,8 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
 ]
 sqlalchemy = [
-    {file = "SQLAlchemy-1.4.36-cp37-cp37m-linux_armv6l.whl", hash = "sha256:2030d983a2f541ff47de557dbbbeb4fcecf0edfcc74340cf0b31d3e381569dd5"},
-    {file = "SQLAlchemy-1.4.36-cp37-cp37m-linux_armv7l.whl", hash = "sha256:2030d983a2f541ff47de557dbbbeb4fcecf0edfcc74340cf0b31d3e381569dd5"},
-    {file = "SQLAlchemy-1.4.36-cp39-cp39-linux_armv6l.whl", hash = "sha256:bf9472a75af5e1398f51ac3b8f4422548614ad5656e3182e2a8825f9968af4df"},
-    {file = "SQLAlchemy-1.4.36-cp39-cp39-linux_armv7l.whl", hash = "sha256:bf9472a75af5e1398f51ac3b8f4422548614ad5656e3182e2a8825f9968af4df"},
+    {file = "SQLAlchemy-1.4.37-cp37-cp37m-linux_armv6l.whl", hash = "sha256:ec3b020f9cf9f9c9e0bc21e67a59e3ba1db9789159bf6a11a23588fb90d28f36"},
+    {file = "SQLAlchemy-1.4.37-cp37-cp37m-linux_armv7l.whl", hash = "sha256:ec3b020f9cf9f9c9e0bc21e67a59e3ba1db9789159bf6a11a23588fb90d28f36"},
+    {file = "SQLAlchemy-1.4.37-cp39-cp39-linux_armv6l.whl", hash = "sha256:b7123da76d067b6dfd91ac10806c07dfd52006a2036bd13d9c8a475090ab96a2"},
+    {file = "SQLAlchemy-1.4.37-cp39-cp39-linux_armv7l.whl", hash = "sha256:b7123da76d067b6dfd91ac10806c07dfd52006a2036bd13d9c8a475090ab96a2"},
 ]
