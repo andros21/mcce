@@ -16,7 +16,7 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.22.3"
+version = "1.22.4"
 description = "NumPy is the fundamental package for array computing with Python."
 category = "main"
 optional = false
@@ -177,7 +177,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "1e4ef205e22b03b2ce983d7454d2d8805df6523c15a599aed4ae91e9d6b063c1"
+content-hash = "3eddd9bca3d0e0f70fe7806b8331d0257f364e32b136e00a2563be2ff5c67421"
 
 [metadata.files]
 greenlet = [
@@ -189,8 +189,8 @@ greenlet = [
     {file = "greenlet-1.1.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:f6dd4fe16556514c81b440cdb3a723a47464705ee56597f892d74ffa77b2796c"},
 ]
 numpy = [
-    {file = "numpy-1.22.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:82df998306893fcabebce6f0a86a87b10b0486de08dde77423ef81b37da0b3ba"},
-    {file = "numpy-1.22.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:82df998306893fcabebce6f0a86a87b10b0486de08dde77423ef81b37da0b3ba"},
+    {file = "numpy-1.22.4-cp39-cp39-linux_armv6l.whl", hash = "sha256:98d1bb536e52326f18cc394ab677e8c438e860f0203607ff70d16857ca4172ba"},
+    {file = "numpy-1.22.4-cp39-cp39-linux_armv7l.whl", hash = "sha256:98d1bb536e52326f18cc394ab677e8c438e860f0203607ff70d16857ca4172ba"},
 ]
 pandas = [
     {file = "pandas-1.4.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:cc455ba74ca8442f70e48f2c70628b2281e5b345864bf5f1d90b20e7135d7007"},
