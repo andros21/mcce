@@ -139,7 +139,7 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "1.4.37"
+version = "1.4.39"
 description = "Database Abstraction Library"
 category = "main"
 optional = false
@@ -177,7 +177,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "3eddd9bca3d0e0f70fe7806b8331d0257f364e32b136e00a2563be2ff5c67421"
+content-hash = "afcfdcc6faa0e0d47885fdefe20be9eb9da57e56a20568ba311423d7ce1fdccd"
 
 [metadata.files]
 greenlet = [
@@ -223,8 +223,8 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
 ]
 sqlalchemy = [
-    {file = "SQLAlchemy-1.4.37-cp37-cp37m-linux_armv6l.whl", hash = "sha256:ec3b020f9cf9f9c9e0bc21e67a59e3ba1db9789159bf6a11a23588fb90d28f36"},
-    {file = "SQLAlchemy-1.4.37-cp37-cp37m-linux_armv7l.whl", hash = "sha256:ec3b020f9cf9f9c9e0bc21e67a59e3ba1db9789159bf6a11a23588fb90d28f36"},
-    {file = "SQLAlchemy-1.4.37-cp39-cp39-linux_armv6l.whl", hash = "sha256:b7123da76d067b6dfd91ac10806c07dfd52006a2036bd13d9c8a475090ab96a2"},
-    {file = "SQLAlchemy-1.4.37-cp39-cp39-linux_armv7l.whl", hash = "sha256:b7123da76d067b6dfd91ac10806c07dfd52006a2036bd13d9c8a475090ab96a2"},
+    {file = "SQLAlchemy-1.4.39-cp37-cp37m-linux_armv6l.whl", hash = "sha256:1392a9734fc53b475ed2b96242e8a9c6e2b77e7314dc0dd9d43e04bbf4b372d1"},
+    {file = "SQLAlchemy-1.4.39-cp37-cp37m-linux_armv7l.whl", hash = "sha256:1392a9734fc53b475ed2b96242e8a9c6e2b77e7314dc0dd9d43e04bbf4b372d1"},
+    {file = "SQLAlchemy-1.4.39-cp39-cp39-linux_armv6l.whl", hash = "sha256:932534e11a4ab595b8f022b307c9fa492cdce6c4eed0005c058945f8b200e390"},
+    {file = "SQLAlchemy-1.4.39-cp39-cp39-linux_armv7l.whl", hash = "sha256:932534e11a4ab595b8f022b307c9fa492cdce6c4eed0005c058945f8b200e390"},
 ]
