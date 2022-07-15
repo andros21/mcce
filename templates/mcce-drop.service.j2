@@ -2,15 +2,15 @@
 Description=MCCE Serial Drop Service
 Wants=network-online.target
 After=network.target network-online.target
-OnFailure=@MAIL
+OnFailure={{ systemd_mailer }}
 
 [Service]
 Type=oneshot
 User=mcce
 Group=mcce
-WorkingDirectory=@WD
-Environment="DATABASE_URL=@DB"
-ExecStart=@PY year_drop.py
+WorkingDirectory={{ working_dir }}
+Environment="DATABASE_URL={{ database_url }}"
+ExecStart={{ python_path }} day_digest.py
 
 [Install]
 WantedBy=multi-user.target

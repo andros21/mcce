@@ -2,16 +2,16 @@
 Description=MCCE Serial Digest Service
 Wants=network-online.target
 After=network.target network-online.target
-OnFailure=@MAIL
+OnFailure={{ systemd_mailer }}
 
 [Service]
 Type=oneshot
 User=mcce
 Group=mcce
-WorkingDirectory=@WD
-Environment="MIN_TIME_RES=@SEC"
-Environment="DATABASE_URL=@DB"
-ExecStart=@PY day_digest.py
+WorkingDirectory={{ working_dir }}
+Environment="MIN_TIME_RES={{ time_seconds }}"
+Environment="DATABASE_URL={{ database_url }}"
+ExecStart={{ python_path }} day_digest.py
 
 [Install]
 WantedBy=multi-user.target
