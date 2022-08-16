@@ -139,7 +139,7 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "1.4.39"
+version = "1.4.40"
 description = "Database Abstraction Library"
 category = "main"
 optional = false
@@ -153,7 +153,7 @@ aiomysql = ["greenlet (!=0.4.17)", "aiomysql"]
 aiosqlite = ["typing-extensions (!=3.10.0.1)", "greenlet (!=0.4.17)", "aiosqlite"]
 asyncio = ["greenlet (!=0.4.17)"]
 asyncmy = ["greenlet (!=0.4.17)", "asyncmy (>=0.2.3,!=0.2.4)"]
-mariadb_connector = ["mariadb (>=1.0.1)"]
+mariadb_connector = ["mariadb (>=1.0.1,!=1.1.2)"]
 mssql = ["pyodbc"]
 mssql_pymssql = ["pymssql"]
 mssql_pyodbc = ["pyodbc"]
@@ -177,7 +177,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "394620730ddeac2c1629f622b2b1392fd7dde748c9a2804a345f193670947ec8"
+content-hash = "6a0818f78a93e07010ccbca0551940e37502ba619534cda97199811d2e77b5b9"
 
 [metadata.files]
 greenlet = [
@@ -223,8 +223,8 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
 ]
 sqlalchemy = [
-    {file = "SQLAlchemy-1.4.39-cp37-cp37m-linux_armv6l.whl", hash = "sha256:1392a9734fc53b475ed2b96242e8a9c6e2b77e7314dc0dd9d43e04bbf4b372d1"},
-    {file = "SQLAlchemy-1.4.39-cp37-cp37m-linux_armv7l.whl", hash = "sha256:1392a9734fc53b475ed2b96242e8a9c6e2b77e7314dc0dd9d43e04bbf4b372d1"},
-    {file = "SQLAlchemy-1.4.39-cp39-cp39-linux_armv6l.whl", hash = "sha256:932534e11a4ab595b8f022b307c9fa492cdce6c4eed0005c058945f8b200e390"},
-    {file = "SQLAlchemy-1.4.39-cp39-cp39-linux_armv7l.whl", hash = "sha256:932534e11a4ab595b8f022b307c9fa492cdce6c4eed0005c058945f8b200e390"},
+    {file = "SQLAlchemy-1.4.40-cp37-cp37m-linux_armv6l.whl", hash = "sha256:120790c8d07f672d0edf0ba4a09b46aedbf0396cd20b116ace65e87cd819a3ed"},
+    {file = "SQLAlchemy-1.4.40-cp37-cp37m-linux_armv7l.whl", hash = "sha256:120790c8d07f672d0edf0ba4a09b46aedbf0396cd20b116ace65e87cd819a3ed"},
+    {file = "SQLAlchemy-1.4.40-cp39-cp39-linux_armv6l.whl", hash = "sha256:3af4de89ce03cd91c98fa46723b2e5a3e1f8eb10dfbdee21dab4e26b5c73cf0a"},
+    {file = "SQLAlchemy-1.4.40-cp39-cp39-linux_armv7l.whl", hash = "sha256:3af4de89ce03cd91c98fa46723b2e5a3e1f8eb10dfbdee21dab4e26b5c73cf0a"},
 ]
