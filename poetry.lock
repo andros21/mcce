@@ -7,7 +7,7 @@ optional = false
 python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*"
 
 [package.extras]
-docs = ["sphinx"]
+docs = ["Sphinx"]
 
 [package.source]
 type = "legacy"
@@ -16,7 +16,7 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.23.1"
+version = "1.23.3"
 description = "NumPy is the fundamental package for array computing with Python."
 category = "main"
 optional = false
@@ -149,24 +149,24 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>=2.7"
 greenlet = {version = "!=0.4.17", markers = "python_version >= \"3\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\")"}
 
 [package.extras]
-aiomysql = ["greenlet (!=0.4.17)", "aiomysql"]
-aiosqlite = ["typing-extensions (!=3.10.0.1)", "greenlet (!=0.4.17)", "aiosqlite"]
+aiomysql = ["aiomysql", "greenlet (!=0.4.17)"]
+aiosqlite = ["aiosqlite", "greenlet (!=0.4.17)", "typing-extensions (!=3.10.0.1)"]
 asyncio = ["greenlet (!=0.4.17)"]
-asyncmy = ["greenlet (!=0.4.17)", "asyncmy (>=0.2.3,!=0.2.4)"]
+asyncmy = ["asyncmy (>=0.2.3,!=0.2.4)", "greenlet (!=0.4.17)"]
 mariadb_connector = ["mariadb (>=1.0.1)"]
 mssql = ["pyodbc"]
 mssql_pymssql = ["pymssql"]
 mssql_pyodbc = ["pyodbc"]
-mypy = ["sqlalchemy2-stubs", "mypy (>=0.910)"]
-mysql = ["mysqlclient (>=1.4.0,<2)", "mysqlclient (>=1.4.0)"]
+mypy = ["mypy (>=0.910)", "sqlalchemy2-stubs"]
+mysql = ["mysqlclient (>=1.4.0)", "mysqlclient (>=1.4.0,<2)"]
 mysql_connector = ["mysql-connector-python"]
-oracle = ["cx-oracle (>=7,<8)", "cx-oracle (>=7)"]
+oracle = ["cx-oracle (>=7)", "cx-oracle (>=7,<8)"]
 postgresql = ["psycopg2 (>=2.7)"]
-postgresql_asyncpg = ["greenlet (!=0.4.17)", "asyncpg"]
+postgresql_asyncpg = ["asyncpg", "greenlet (!=0.4.17)"]
 postgresql_pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
 postgresql_psycopg2binary = ["psycopg2-binary"]
 postgresql_psycopg2cffi = ["psycopg2cffi"]
-pymysql = ["pymysql (<1)", "pymysql"]
+pymysql = ["pymysql", "pymysql (<1)"]
 sqlcipher = ["sqlcipher3-binary"]
 
 [package.source]
@@ -177,7 +177,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "394620730ddeac2c1629f622b2b1392fd7dde748c9a2804a345f193670947ec8"
+content-hash = "b92454a4d9a967278cd9f0c5137c3b46cbdcf0de70fc7796247ad95d44951b90"
 
 [metadata.files]
 greenlet = [
@@ -189,8 +189,8 @@ greenlet = [
     {file = "greenlet-1.1.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:f6dd4fe16556514c81b440cdb3a723a47464705ee56597f892d74ffa77b2796c"},
 ]
 numpy = [
-    {file = "numpy-1.23.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:c445b798864ecce1dc932b1b530163300db9f8d57eb0c10f31f4661aa70bc15e"},
-    {file = "numpy-1.23.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:c445b798864ecce1dc932b1b530163300db9f8d57eb0c10f31f4661aa70bc15e"},
+    {file = "numpy-1.23.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:a1793f03c0cb1adcb1743028f0dcddd99275f5162c027928097f31c831bf7108"},
+    {file = "numpy-1.23.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:a1793f03c0cb1adcb1743028f0dcddd99275f5162c027928097f31c831bf7108"},
 ]
 pandas = [
     {file = "pandas-1.4.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:bf88d8bb301b50303435602240370806d0f20c06a9ee02e3b8340683e69c6d72"},
