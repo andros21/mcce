@@ -9,7 +9,7 @@ authors     = ["andros21 <andrea.ros21@e.email>"]
 python = ">=3.9,<3.11"
 psycopg2 = "^2.9.3"
 numpy = "^1.23.3"
-pandas = "^1.4.3"
+pandas = "^1.5.0"
 pyserial = "^3.5"
 sqlalchemy = "^1.4.39"
 "rpi.gpio" = "^0.7.1"
