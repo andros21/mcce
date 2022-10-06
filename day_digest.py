@@ -82,7 +82,9 @@ if __name__ == "__main__":
 
     fixed_day_size = 17281  # expected day file lines
     cdate = datetime.datetime.now()  # today date
-    db_uri = os.environ["DATABASE_URL"]  # database path/url
+    db_uri = os.environ["DATABASE_URL"].replace(
+        "postgres", "postgresql"
+    )  # database path/url
     resolution = int(os.environ["MIN_TIME_RES"])  # time resolution in min
     bdate = cdate - datetime.timedelta(days=1)  # yesterday date
 
