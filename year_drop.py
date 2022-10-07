@@ -29,5 +29,5 @@ def drop_all_tables(uri):
 
 
 if __name__ == "__main__":
-    db_uri = os.environ["DATABASE_URL"].replace("postgres", "postgresql")
+    db_uri = os.environ["DATABASE_URL"].replace("postgres://", "postgresql://")
     drop_all_tables(db_uri)
