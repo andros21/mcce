@@ -16,7 +16,7 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.23.3"
+version = "1.23.4"
 description = "NumPy is the fundamental package for array computing with Python."
 category = "main"
 optional = false
@@ -151,19 +151,19 @@ aiomysql = ["aiomysql", "greenlet (!=0.4.17)"]
 aiosqlite = ["aiosqlite", "greenlet (!=0.4.17)", "typing-extensions (!=3.10.0.1)"]
 asyncio = ["greenlet (!=0.4.17)"]
 asyncmy = ["asyncmy (>=0.2.3,!=0.2.4)", "greenlet (!=0.4.17)"]
-mariadb_connector = ["mariadb (>=1.0.1,!=1.1.2)"]
+mariadb-connector = ["mariadb (>=1.0.1,!=1.1.2)"]
 mssql = ["pyodbc"]
-mssql_pymssql = ["pymssql"]
-mssql_pyodbc = ["pyodbc"]
+mssql-pymssql = ["pymssql"]
+mssql-pyodbc = ["pyodbc"]
 mypy = ["mypy (>=0.910)", "sqlalchemy2-stubs"]
 mysql = ["mysqlclient (>=1.4.0)", "mysqlclient (>=1.4.0,<2)"]
-mysql_connector = ["mysql-connector-python"]
+mysql-connector = ["mysql-connector-python"]
 oracle = ["cx-oracle (>=7)", "cx-oracle (>=7,<8)"]
 postgresql = ["psycopg2 (>=2.7)"]
-postgresql_asyncpg = ["asyncpg", "greenlet (!=0.4.17)"]
-postgresql_pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
-postgresql_psycopg2binary = ["psycopg2-binary"]
-postgresql_psycopg2cffi = ["psycopg2cffi"]
+postgresql-asyncpg = ["asyncpg", "greenlet (!=0.4.17)"]
+postgresql-pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
+postgresql-psycopg2binary = ["psycopg2-binary"]
+postgresql-psycopg2cffi = ["psycopg2cffi"]
 pymysql = ["pymysql", "pymysql (<1)"]
 sqlcipher = ["sqlcipher3-binary"]
 
@@ -175,7 +175,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "b398e3af86eab049dde0be71e0110b507f215ee55c5a87146adbcea4d2db22be"
+content-hash = "6c4ebea127dd4a216f310548bb6e52868c86401fb53801963e56e5f5b112f927"
 
 [metadata.files]
 greenlet = [
@@ -187,8 +187,8 @@ greenlet = [
     {file = "greenlet-1.1.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:f6dd4fe16556514c81b440cdb3a723a47464705ee56597f892d74ffa77b2796c"},
 ]
 numpy = [
-    {file = "numpy-1.23.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:a1793f03c0cb1adcb1743028f0dcddd99275f5162c027928097f31c831bf7108"},
-    {file = "numpy-1.23.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:a1793f03c0cb1adcb1743028f0dcddd99275f5162c027928097f31c831bf7108"},
+    {file = "numpy-1.23.4-cp39-cp39-linux_armv6l.whl", hash = "sha256:18d92e8c32da81527408a6b34f2b198760b6f1f829b49bb9acfffe5eba233315"},
+    {file = "numpy-1.23.4-cp39-cp39-linux_armv7l.whl", hash = "sha256:18d92e8c32da81527408a6b34f2b198760b6f1f829b49bb9acfffe5eba233315"},
 ]
 pandas = [
     {file = "pandas-1.5.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:b82cc524b486524dbca59b3de14ace4ef28820d1e777382a10d2b6b7c2908c34"},
