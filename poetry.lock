@@ -137,7 +137,7 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "1.4.41"
+version = "1.4.42"
 description = "Database Abstraction Library"
 category = "main"
 optional = false
@@ -151,19 +151,19 @@ aiomysql = ["aiomysql", "greenlet (!=0.4.17)"]
 aiosqlite = ["aiosqlite", "greenlet (!=0.4.17)", "typing-extensions (!=3.10.0.1)"]
 asyncio = ["greenlet (!=0.4.17)"]
 asyncmy = ["asyncmy (>=0.2.3,!=0.2.4)", "greenlet (!=0.4.17)"]
-mariadb_connector = ["mariadb (>=1.0.1,!=1.1.2)"]
+mariadb-connector = ["mariadb (>=1.0.1,!=1.1.2)"]
 mssql = ["pyodbc"]
-mssql_pymssql = ["pymssql"]
-mssql_pyodbc = ["pyodbc"]
+mssql-pymssql = ["pymssql"]
+mssql-pyodbc = ["pyodbc"]
 mypy = ["mypy (>=0.910)", "sqlalchemy2-stubs"]
 mysql = ["mysqlclient (>=1.4.0)", "mysqlclient (>=1.4.0,<2)"]
-mysql_connector = ["mysql-connector-python"]
+mysql-connector = ["mysql-connector-python"]
 oracle = ["cx-oracle (>=7)", "cx-oracle (>=7,<8)"]
 postgresql = ["psycopg2 (>=2.7)"]
-postgresql_asyncpg = ["asyncpg", "greenlet (!=0.4.17)"]
-postgresql_pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
-postgresql_psycopg2binary = ["psycopg2-binary"]
-postgresql_psycopg2cffi = ["psycopg2cffi"]
+postgresql-asyncpg = ["asyncpg", "greenlet (!=0.4.17)"]
+postgresql-pg8000 = ["pg8000 (>=1.16.6,!=1.29.0)"]
+postgresql-psycopg2binary = ["psycopg2-binary"]
+postgresql-psycopg2cffi = ["psycopg2cffi"]
 pymysql = ["pymysql", "pymysql (<1)"]
 sqlcipher = ["sqlcipher3-binary"]
 
@@ -175,7 +175,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "b398e3af86eab049dde0be71e0110b507f215ee55c5a87146adbcea4d2db22be"
+content-hash = "76f538857d471340db2cb5fd2bc56d9be795484b3e4c9a04b111d3436f08f0e3"
 
 [metadata.files]
 greenlet = [
@@ -221,8 +221,8 @@ six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
 ]
 sqlalchemy = [
-    {file = "SQLAlchemy-1.4.41-cp37-cp37m-linux_armv6l.whl", hash = "sha256:dcb9ad99802c9d2e6a1f390bd5b9adcb6125da8503086c36e8599ea62ba93f8b"},
-    {file = "SQLAlchemy-1.4.41-cp37-cp37m-linux_armv7l.whl", hash = "sha256:dcb9ad99802c9d2e6a1f390bd5b9adcb6125da8503086c36e8599ea62ba93f8b"},
-    {file = "SQLAlchemy-1.4.41-cp39-cp39-linux_armv6l.whl", hash = "sha256:1b532813babb94874dd8f47935deb9926951d53cdd7bd2b857297e36c366d0bd"},
-    {file = "SQLAlchemy-1.4.41-cp39-cp39-linux_armv7l.whl", hash = "sha256:1b532813babb94874dd8f47935deb9926951d53cdd7bd2b857297e36c366d0bd"},
+    {file = "SQLAlchemy-1.4.42-cp37-cp37m-linux_armv6l.whl", hash = "sha256:ffa3a430d35c0c9fa5b5b318c39d004254c8d31423ba83ec91599452027ec94b"},
+    {file = "SQLAlchemy-1.4.42-cp37-cp37m-linux_armv7l.whl", hash = "sha256:ffa3a430d35c0c9fa5b5b318c39d004254c8d31423ba83ec91599452027ec94b"},
+    {file = "SQLAlchemy-1.4.42-cp39-cp39-linux_armv6l.whl", hash = "sha256:d75f7c98581867e116bb69f9ef86f15d7d245050e08569def0b44279c46df83c"},
+    {file = "SQLAlchemy-1.4.42-cp39-cp39-linux_armv7l.whl", hash = "sha256:d75f7c98581867e116bb69f9ef86f15d7d245050e08569def0b44279c46df83c"},
 ]

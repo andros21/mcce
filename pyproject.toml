@@ -11,7 +11,7 @@ psycopg2 = "^2.9.3"
 numpy = "^1.23.3"
 pandas = "^1.5.0"
 pyserial = "^3.5"
-sqlalchemy = "^1.4.41"
+sqlalchemy = "^1.4.42"
 "rpi.gpio" = "^0.7.1"
 
 [tool.poetry.dev-dependencies]
