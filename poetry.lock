@@ -53,7 +53,7 @@ reference = "piwheels"
 
 [[package]]
 name = "psycopg2"
-version = "2.9.3"
+version = "2.9.5"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
 category = "main"
 optional = false
@@ -175,7 +175,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "05ea67c50d3335d205d87b51ada1859e436d6b03e52d5ad949d0606b7bc41fc2"
+content-hash = "b88cbe7053c84ee84c131a2038ce17bc8b9b6ba10b0ee95509c9811310915092"
 
 [metadata.files]
 greenlet = [
@@ -195,10 +195,10 @@ pandas = [
     {file = "pandas-1.5.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:932cb4fba0a76eeff762dd9ef0881861ab3ec131d8ca4f6ba22b1fae64a23b35"},
 ]
 psycopg2 = [
-    {file = "psycopg2-2.9.3-cp37-cp37m-linux_armv6l.whl", hash = "sha256:36ceaf32c01b370a814666ce42250963118c7770e88676399ea7b1b9edb792f6"},
-    {file = "psycopg2-2.9.3-cp37-cp37m-linux_armv7l.whl", hash = "sha256:36ceaf32c01b370a814666ce42250963118c7770e88676399ea7b1b9edb792f6"},
-    {file = "psycopg2-2.9.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:70b7ec3da97c25180541748b35af546a2fc2692ee26fd751092b55a1b6952d1e"},
-    {file = "psycopg2-2.9.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:70b7ec3da97c25180541748b35af546a2fc2692ee26fd751092b55a1b6952d1e"},
+    {file = "psycopg2-2.9.5-cp37-cp37m-linux_armv6l.whl", hash = "sha256:66c0db9f1e0027dc4f2914c64d172ba77df5c638f62705b288be5de6f55e82a0"},
+    {file = "psycopg2-2.9.5-cp37-cp37m-linux_armv7l.whl", hash = "sha256:66c0db9f1e0027dc4f2914c64d172ba77df5c638f62705b288be5de6f55e82a0"},
+    {file = "psycopg2-2.9.5-cp39-cp39-linux_armv6l.whl", hash = "sha256:4263003e26c3091257b1285af83b7758002cc347584bf9b697731a4e3b283d45"},
+    {file = "psycopg2-2.9.5-cp39-cp39-linux_armv7l.whl", hash = "sha256:4263003e26c3091257b1285af83b7758002cc347584bf9b697731a4e3b283d45"},
 ]
 pyserial = [
     {file = "pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"},
