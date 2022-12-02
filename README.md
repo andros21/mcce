@@ -61,7 +61,7 @@ Steps to run repo/project:
    ```
 2. Create a python environment with packages needed
    ```
-   poetry install --no-root --no-dev
+   poetry install --no-root --only main
    ```
 4. Copy systemd service template files inside `/etc/systemd/system/`
 5. Change file permissions, that must be `-rw-r-----  root root`
