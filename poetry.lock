@@ -29,7 +29,7 @@ reference = "piwheels"
 
 [[package]]
 name = "pandas"
-version = "1.5.1"
+version = "1.5.2"
 description = "Powerful data structures for data analysis, time series, and statistics"
 category = "main"
 optional = false
@@ -175,7 +175,7 @@ reference = "piwheels"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<3.11"
-content-hash = "48f1cbe9f30b864cc244957838dbc0f215ef311ca17c29c04e2b2e2cbb87ee08"
+content-hash = "3ec0dd41fc7ed6c91cd17f8ec6236e975d6de63184858f993e30286e2c00cec7"
 
 [metadata.files]
 greenlet = [
@@ -191,8 +191,8 @@ numpy = [
     {file = "numpy-1.23.5-cp39-cp39-linux_armv7l.whl", hash = "sha256:3c1daa2c6ab115394cbb4698067c1b949c30155c1ed93d385567dd6299f061aa"},
 ]
 pandas = [
-    {file = "pandas-1.5.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:932cb4fba0a76eeff762dd9ef0881861ab3ec131d8ca4f6ba22b1fae64a23b35"},
-    {file = "pandas-1.5.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:932cb4fba0a76eeff762dd9ef0881861ab3ec131d8ca4f6ba22b1fae64a23b35"},
+    {file = "pandas-1.5.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:a33578a6a1c5b9e70b77d1be8b496b61ac60b800c221ee0bfa79f30acd121828"},
+    {file = "pandas-1.5.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:a33578a6a1c5b9e70b77d1be8b496b61ac60b800c221ee0bfa79f30acd121828"},
 ]
 psycopg2 = [
     {file = "psycopg2-2.9.5-cp37-cp37m-linux_armv6l.whl", hash = "sha256:66c0db9f1e0027dc4f2914c64d172ba77df5c638f62705b288be5de6f55e82a0"},
