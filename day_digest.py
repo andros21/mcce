@@ -41,7 +41,7 @@ def adjust_df(df, tsize):
     else:
         if dsize > 0:
             df_tail = df.tail(dsize)
-            df = df.append(df_tail).reset_index(drop=True)
+            df = pd.concat([df, df_tail]).reset_index(drop=True)
         else:
             df = df[:dsize]
     return df
