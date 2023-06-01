@@ -19,7 +19,7 @@ sqlalchemy = "^2.0.15"
 [[tool.poetry.source]]
 name = "piwheels"
 url = "https://www.piwheels.org/simple/"
-default = true
+priority = "default"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
