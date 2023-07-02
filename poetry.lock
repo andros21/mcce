@@ -25,13 +25,13 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.24.2"
+version = "1.25.0"
 description = "Fundamental package for array computing in Python"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 files = [
-    {file = "numpy-1.24.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:bd9c94c75a4e3a2f58329c8095b94ccd9468fb0ec84633dc4eef29df29f6f3e5"},
-    {file = "numpy-1.24.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:bd9c94c75a4e3a2f58329c8095b94ccd9468fb0ec84633dc4eef29df29f6f3e5"},
+    {file = "numpy-1.25.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:80fa4272e7c57c51113c5f829a3172e6cae923aa8ecd21962e81ae7cfcf3a54a"},
+    {file = "numpy-1.25.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:80fa4272e7c57c51113c5f829a3172e6cae923aa8ecd21962e81ae7cfcf3a54a"},
 ]
 
 [package.source]
@@ -270,4 +270,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "ff25dfb0f1ebaeaafd7ce97d7177d204f20df07c3799e7c9fab3002b74765cf3"
+content-hash = "9f58f6fb154a4bf131261194ea09e77d7203954d74a954b247bd77a7a39f20a4"
