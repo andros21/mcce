@@ -12,12 +12,10 @@ So I'd like to turn it into something more advanced:
 
 * Parse the instantaneous values using a Raspberry Pi (im my case a Pi 2) with python script reading from USB serial connector
 
-  > **Note**
-  >
+  > [!NOTE]\
   > The first difficulty was to understand how to start the serial flow after the serial connection ... yes, the device not stream nothing by default, a particolar hex code must be send to it to start the bytes streaming. After a little reverse engineering using wireshark usb tool, the code has been found.
 
-  > **Note**
-  >
+  > [!NOTE]\
   > The second difficulty was to understand how to read the bytes flow and convert it to decimal values, that must be equal to the power consumptions show by the device display.
 
   Look at `day_loop.py` for the solutions
@@ -83,8 +81,7 @@ Steps to run repo/project:
    sudo systemctl enable --now mcce-digest.timer
    ```
 
-   > **Warning**
-   >
+   > [!WARNING]\
    > Not select an hour before midnight, for `mcce-digest.timer`
 
 9. Check with some `systemctl status` or using `journalctl` if everything went well
