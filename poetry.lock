@@ -193,15 +193,15 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "2.0.19"
+version = "2.0.20"
 description = "Database Abstraction Library"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "SQLAlchemy-2.0.19-cp37-cp37m-linux_armv6l.whl", hash = "sha256:d07cec2cb6c425964e98965738eb5354d936192e3ca0156f2cdecdd4f59b83e2"},
-    {file = "SQLAlchemy-2.0.19-cp37-cp37m-linux_armv7l.whl", hash = "sha256:d07cec2cb6c425964e98965738eb5354d936192e3ca0156f2cdecdd4f59b83e2"},
-    {file = "SQLAlchemy-2.0.19-cp39-cp39-linux_armv6l.whl", hash = "sha256:f3f030f950544676f0b5ace5851b330fb593936fe5e64a91ac9a43e80f7f20b7"},
-    {file = "SQLAlchemy-2.0.19-cp39-cp39-linux_armv7l.whl", hash = "sha256:f3f030f950544676f0b5ace5851b330fb593936fe5e64a91ac9a43e80f7f20b7"},
+    {file = "SQLAlchemy-2.0.20-cp37-cp37m-linux_armv6l.whl", hash = "sha256:894c2d5c4a1606cdd48c280ac6fa135861a33ab8f5d0bef7ecf95ddc98284c93"},
+    {file = "SQLAlchemy-2.0.20-cp37-cp37m-linux_armv7l.whl", hash = "sha256:894c2d5c4a1606cdd48c280ac6fa135861a33ab8f5d0bef7ecf95ddc98284c93"},
+    {file = "SQLAlchemy-2.0.20-cp39-cp39-linux_armv6l.whl", hash = "sha256:ae2f4951c066d13b6fd90751bb80e76127af66680fe8346c868febfea574e8fa"},
+    {file = "SQLAlchemy-2.0.20-cp39-cp39-linux_armv7l.whl", hash = "sha256:ae2f4951c066d13b6fd90751bb80e76127af66680fe8346c868febfea574e8fa"},
 ]
 
 [package.dependencies]
@@ -209,7 +209,7 @@ greenlet = {version = "!=0.4.17", markers = "platform_machine == \"aarch64\" or 
 typing-extensions = ">=4.2.0"
 
 [package.extras]
-aiomysql = ["aiomysql", "greenlet (!=0.4.17)"]
+aiomysql = ["aiomysql (>=0.2.0)", "greenlet (!=0.4.17)"]
 aiosqlite = ["aiosqlite", "greenlet (!=0.4.17)", "typing-extensions (!=3.10.0.1)"]
 asyncio = ["greenlet (!=0.4.17)"]
 asyncmy = ["asyncmy (>=0.2.3,!=0.2.4,!=0.2.6)", "greenlet (!=0.4.17)"]
@@ -270,4 +270,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "452abed319c59b93acce7884c11eca08702741db7752d8ec3560df720c62fc78"
+content-hash = "0c28f47f709573e852cd059c242dcf085bb5554f8cce124f23eba3f24fc6db38"
