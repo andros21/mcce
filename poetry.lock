@@ -199,17 +199,17 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "2.0.20"
+version = "2.0.21"
 description = "Database Abstraction Library"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "SQLAlchemy-2.0.20-cp311-cp311-linux_armv6l.whl", hash = "sha256:0bd654d412e6cbffaeaa9ce3c82b65b4ffd48fb1954db67832c097c2c55f3a78"},
-    {file = "SQLAlchemy-2.0.20-cp311-cp311-linux_armv7l.whl", hash = "sha256:0bd654d412e6cbffaeaa9ce3c82b65b4ffd48fb1954db67832c097c2c55f3a78"},
-    {file = "SQLAlchemy-2.0.20-cp37-cp37m-linux_armv6l.whl", hash = "sha256:894c2d5c4a1606cdd48c280ac6fa135861a33ab8f5d0bef7ecf95ddc98284c93"},
-    {file = "SQLAlchemy-2.0.20-cp37-cp37m-linux_armv7l.whl", hash = "sha256:894c2d5c4a1606cdd48c280ac6fa135861a33ab8f5d0bef7ecf95ddc98284c93"},
-    {file = "SQLAlchemy-2.0.20-cp39-cp39-linux_armv6l.whl", hash = "sha256:ae2f4951c066d13b6fd90751bb80e76127af66680fe8346c868febfea574e8fa"},
-    {file = "SQLAlchemy-2.0.20-cp39-cp39-linux_armv7l.whl", hash = "sha256:ae2f4951c066d13b6fd90751bb80e76127af66680fe8346c868febfea574e8fa"},
+    {file = "SQLAlchemy-2.0.21-cp311-cp311-linux_armv6l.whl", hash = "sha256:2f89eb53a9b1de7cbc7fa366aadc941b123df909ef30fed8e350ccbc953e4c95"},
+    {file = "SQLAlchemy-2.0.21-cp311-cp311-linux_armv7l.whl", hash = "sha256:2f89eb53a9b1de7cbc7fa366aadc941b123df909ef30fed8e350ccbc953e4c95"},
+    {file = "SQLAlchemy-2.0.21-cp37-cp37m-linux_armv6l.whl", hash = "sha256:bf57b1fe809db5b56c539b8b65c3b8ce739e1e66e40a4b06380cfbe42b77ff0a"},
+    {file = "SQLAlchemy-2.0.21-cp37-cp37m-linux_armv7l.whl", hash = "sha256:bf57b1fe809db5b56c539b8b65c3b8ce739e1e66e40a4b06380cfbe42b77ff0a"},
+    {file = "SQLAlchemy-2.0.21-cp39-cp39-linux_armv6l.whl", hash = "sha256:b1e45bf6cd5819e3366d6cf37a73e926e255c56ff4a6e09e6fa7b2019fdaa1d6"},
+    {file = "SQLAlchemy-2.0.21-cp39-cp39-linux_armv7l.whl", hash = "sha256:b1e45bf6cd5819e3366d6cf37a73e926e255c56ff4a6e09e6fa7b2019fdaa1d6"},
 ]
 
 [package.dependencies]
@@ -278,4 +278,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "0380aebfc292dab947bf2d01590c595d60569a5df95bdc3b2d73e8bc49888d1a"
+content-hash = "dd327dd810f260d6ae73c6309d9c01401e87f28b5c8e678f7a458de54e095582"
