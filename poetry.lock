@@ -25,13 +25,13 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.25.2"
+version = "1.26.0"
 description = "Fundamental package for array computing in Python"
 optional = false
-python-versions = ">=3.9"
+python-versions = "<3.13,>=3.9"
 files = [
-    {file = "numpy-1.25.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:4b0bf79e4c9ea416d3e7ddfd463263b7489c80e8fac9c94f3c9f11ee443210b7"},
-    {file = "numpy-1.25.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:4b0bf79e4c9ea416d3e7ddfd463263b7489c80e8fac9c94f3c9f11ee443210b7"},
+    {file = "numpy-1.26.0-cp311-cp311-linux_armv6l.whl", hash = "sha256:e45c77ca11e813a2ab79efe540078e214f8ddaedea3d235917409d97fd937e78"},
+    {file = "numpy-1.26.0-cp311-cp311-linux_armv7l.whl", hash = "sha256:e45c77ca11e813a2ab79efe540078e214f8ddaedea3d235917409d97fd937e78"},
 ]
 
 [package.source]
@@ -94,6 +94,8 @@ description = "psycopg2 - Python-PostgreSQL Database Adapter"
 optional = false
 python-versions = ">=3.6"
 files = [
+    {file = "psycopg2-2.9.7-cp311-cp311-linux_armv6l.whl", hash = "sha256:72381d9c3b667b7b7fe51eee795d309926a61a9af9eaf17830570a6c89eea6d8"},
+    {file = "psycopg2-2.9.7-cp311-cp311-linux_armv7l.whl", hash = "sha256:72381d9c3b667b7b7fe51eee795d309926a61a9af9eaf17830570a6c89eea6d8"},
     {file = "psycopg2-2.9.7-cp37-cp37m-linux_armv6l.whl", hash = "sha256:a343b7efc0b0c75da7516f087089749410a9dd1957d895afb622dc4d339aa051"},
     {file = "psycopg2-2.9.7-cp37-cp37m-linux_armv7l.whl", hash = "sha256:a343b7efc0b0c75da7516f087089749410a9dd1957d895afb622dc4d339aa051"},
     {file = "psycopg2-2.9.7-cp39-cp39-linux_armv6l.whl", hash = "sha256:4d508ed9b484c0f8a0468df905437c68df49cb0dbd399cea4d3252b9b832f2d1"},
@@ -163,6 +165,8 @@ description = "A module to control Raspberry Pi GPIO channels"
 optional = false
 python-versions = "*"
 files = [
+    {file = "RPi.GPIO-0.7.1-cp311-cp311-linux_armv6l.whl", hash = "sha256:df02c92d1a55ff8cdfffea5012ea73a9b09fdcc4d14799d834b3840fcf4039ad"},
+    {file = "RPi.GPIO-0.7.1-cp311-cp311-linux_armv7l.whl", hash = "sha256:df02c92d1a55ff8cdfffea5012ea73a9b09fdcc4d14799d834b3840fcf4039ad"},
     {file = "RPi.GPIO-0.7.1-cp35-cp35m-linux_armv6l.whl", hash = "sha256:5073d1972727cfad38a1a42f02da91dc41f137679290aa804ab6c410168347ac"},
     {file = "RPi.GPIO-0.7.1-cp35-cp35m-linux_armv7l.whl", hash = "sha256:5073d1972727cfad38a1a42f02da91dc41f137679290aa804ab6c410168347ac"},
     {file = "RPi.GPIO-0.7.1-cp37-cp37m-linux_armv6l.whl", hash = "sha256:e5dfec2c4ccb7dbe9eef3dfc76a3b04121fc62d77fd8fbe1a8e841468a1b0c4c"},
@@ -198,6 +202,8 @@ description = "Database Abstraction Library"
 optional = false
 python-versions = ">=3.7"
 files = [
+    {file = "SQLAlchemy-2.0.20-cp311-cp311-linux_armv6l.whl", hash = "sha256:0bd654d412e6cbffaeaa9ce3c82b65b4ffd48fb1954db67832c097c2c55f3a78"},
+    {file = "SQLAlchemy-2.0.20-cp311-cp311-linux_armv7l.whl", hash = "sha256:0bd654d412e6cbffaeaa9ce3c82b65b4ffd48fb1954db67832c097c2c55f3a78"},
     {file = "SQLAlchemy-2.0.20-cp37-cp37m-linux_armv6l.whl", hash = "sha256:894c2d5c4a1606cdd48c280ac6fa135861a33ab8f5d0bef7ecf95ddc98284c93"},
     {file = "SQLAlchemy-2.0.20-cp37-cp37m-linux_armv7l.whl", hash = "sha256:894c2d5c4a1606cdd48c280ac6fa135861a33ab8f5d0bef7ecf95ddc98284c93"},
     {file = "SQLAlchemy-2.0.20-cp39-cp39-linux_armv6l.whl", hash = "sha256:ae2f4951c066d13b6fd90751bb80e76127af66680fe8346c868febfea574e8fa"},
@@ -270,4 +276,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "0c28f47f709573e852cd059c242dcf085bb5554f8cce124f23eba3f24fc6db38"
+content-hash = "7087aa5d691009469a9b3eae62abd8f60831254ac7c1a90cea4dfacda2d8e183"
