@@ -7,11 +7,11 @@ authors = ["andros21 <andrea.ros21@e.email>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.11"
-psycopg2 = "^2.9.7"
-numpy = "^1.26.0"
+psycopg2 = "^2.9.9"
+numpy = "^1.26.1"
 pandas = "^2.1.1"
 pyserial = "^3.5"
-sqlalchemy = "^2.0.21"
+sqlalchemy = "^2.0.22"
 "rpi.gpio" = "^0.7.1"
 
 [tool.poetry.dev-dependencies]
