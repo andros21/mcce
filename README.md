@@ -57,6 +57,11 @@ By the way, before start with setup, hardware prerequisites:
 
 Steps to run repo/project:
 
+0. Libgpiod library (needed for `alarm4200.py`) needs to be
+   installed system-wide, on debian systems:
+   ```
+   sudo apt install python3-libgpiod
+   ```
 1. Clone the repo
    ```
    git clone https://github.com/andros21/mcce.git

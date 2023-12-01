@@ -15,30 +15,43 @@
 
 import time
 
-import RPi.GPIO as GPIO
+import gpiod
+
+
+def software_pwm(line, frequency, duty_cycle):
+    """Software PWM until API availability for hardware PWM"""
+    period = 1 / frequency
+    on_time = period * (duty_cycle / 100)
+
+    for i in range(10):
+        line.set_value(1)
+        time.sleep(on_time)
+
+        line.set_value(0)
+        time.sleep(period - on_time)
+
 
 if __name__ == "__main__":
+    chip = gpiod.Chip("gpiochip0")
 
-    GPIO.setmode(GPIO.BOARD)
+    # Set up lines
+    dc_line = chip.get_line(17)
+    dc_line.request(consumer="my_consumer", type=gpiod.LINE_REQ_DIR_OUT)
 
-    GPIO.setup(11, GPIO.OUT)  # DC line
-    GPIO.setup(12, GPIO.OUT)  # PWM signal
+    dc_line.set_value(1)  # DC Power on
 
-    GPIO.output(11, 1)  # DC Power on
-    freq = 7000
-    p = GPIO.PWM(12, freq)  # PWM setup
+    freq = 5000
+    pwm_line = chip.get_line(18)
+    pwm_line.request(consumer="my_consumer", type=gpiod.LINE_REQ_DIR_OUT)
 
     # Do alarm ring
-    p.start(1)
-    for step in range(0, 3):
-        i = 0
+    for step in range(0, 10):
         for i in range(0, 100):
-            p.ChangeFrequency(freq + (125 * i))
-            time.sleep(0.005)
-        i = 0
+            software_pwm(pwm_line, freq + (1250 * i), 50)
         for i in range(0, 100):
-            p.ChangeFrequency(freq + (125 * 100) - (100 * i))
-            time.sleep(0.005)
-    p.stop()
+            software_pwm(pwm_line, freq + (1250 * 100) - (1000 * i), 50)
 
-    GPIO.cleanup()  # Flush values
+    # Cleanup
+    dc_line.release()
+    pwm_line.release()
+    chip.close()
