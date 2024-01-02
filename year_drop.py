@@ -5,7 +5,7 @@
 #
 #   Name:   year_drop.py
 #   Author: Andrea Rossoni
-#   Scope:  Drop all tables on heroku
+#   Scope:  Drop all tables on flyio
 #           postgresql deployment
 # ......................................
 
@@ -15,17 +15,11 @@ import sqlalchemy
 
 
 def drop_all_tables(uri):
-    """drop all tables on heroku postgresql"""
+    """drop all tables on flyio postgresql"""
     engine = sqlalchemy.create_engine(uri)
-    insp = sqlalchemy.inspect(engine)
-    meta = sqlalchemy.MetaData(engine)
-
-    sqlalchemy.MetaData.reflect(meta)
-
-    tables = insp.get_table_names()
-    for table in tables:
-        table_obj = meta.tables[table]
-        table_obj.drop()
+    meta = sqlalchemy.MetaData()
+    meta.reflect(engine)
+    meta.drop_all(engine)
 
 
 if __name__ == "__main__":
