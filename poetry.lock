@@ -25,15 +25,15 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.26.2"
+version = "1.26.3"
 description = "Fundamental package for array computing in Python"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "numpy-1.26.2-cp311-cp311-linux_armv6l.whl", hash = "sha256:784889ff2205b671e8283e37caa621a3aa1c8d0d4c03b44be4a857efde2edd72"},
-    {file = "numpy-1.26.2-cp311-cp311-linux_armv7l.whl", hash = "sha256:784889ff2205b671e8283e37caa621a3aa1c8d0d4c03b44be4a857efde2edd72"},
-    {file = "numpy-1.26.2-cp39-cp39-linux_armv6l.whl", hash = "sha256:795033f0e3b6a1ef31729906d68c88aab30f18cc625850729e95d0c8607a6ef6"},
-    {file = "numpy-1.26.2-cp39-cp39-linux_armv7l.whl", hash = "sha256:795033f0e3b6a1ef31729906d68c88aab30f18cc625850729e95d0c8607a6ef6"},
+    {file = "numpy-1.26.3-cp311-cp311-linux_armv6l.whl", hash = "sha256:b7e9c0ab8d37f0206c3971be4224bfd77002c3763869029acf096754c42cdfe7"},
+    {file = "numpy-1.26.3-cp311-cp311-linux_armv7l.whl", hash = "sha256:b7e9c0ab8d37f0206c3971be4224bfd77002c3763869029acf096754c42cdfe7"},
+    {file = "numpy-1.26.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:411d10f5630a26dfd3121dfdc7d0941239f4badeb214406264a77f2e26dbcef7"},
+    {file = "numpy-1.26.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:411d10f5630a26dfd3121dfdc7d0941239f4badeb214406264a77f2e26dbcef7"},
 ]
 
 [package.source]
@@ -43,46 +43,46 @@ reference = "piwheels"
 
 [[package]]
 name = "pandas"
-version = "2.1.4"
+version = "2.2.0"
 description = "Powerful data structures for data analysis, time series, and statistics"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "pandas-2.1.4-cp311-cp311-linux_armv6l.whl", hash = "sha256:483489d3aa81588246d58e0b48c49315dfc81e24e69d77752dd99974c78e1120"},
-    {file = "pandas-2.1.4-cp311-cp311-linux_armv7l.whl", hash = "sha256:483489d3aa81588246d58e0b48c49315dfc81e24e69d77752dd99974c78e1120"},
-    {file = "pandas-2.1.4-cp39-cp39-linux_armv6l.whl", hash = "sha256:781e1417d58ba6c6726c92734f22130bd0e385a0c276daaf45475f982515adee"},
-    {file = "pandas-2.1.4-cp39-cp39-linux_armv7l.whl", hash = "sha256:781e1417d58ba6c6726c92734f22130bd0e385a0c276daaf45475f982515adee"},
+    {file = "pandas-2.2.0-cp311-cp311-linux_armv6l.whl", hash = "sha256:7a14f94710a4aa13973eda2371c97d1bebd88a7ffc09744d0625b124236e94db"},
+    {file = "pandas-2.2.0-cp311-cp311-linux_armv7l.whl", hash = "sha256:7a14f94710a4aa13973eda2371c97d1bebd88a7ffc09744d0625b124236e94db"},
+    {file = "pandas-2.2.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:03c1ec8de770a0891b66623b6240160980e7511a7c20fa846c283d4e54f12f9f"},
+    {file = "pandas-2.2.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:03c1ec8de770a0891b66623b6240160980e7511a7c20fa846c283d4e54f12f9f"},
 ]
 
 [package.dependencies]
 numpy = {version = ">=1.22.4,<2", markers = "python_version < \"3.11\""}
 python-dateutil = ">=2.8.2"
 pytz = ">=2020.1"
-tzdata = ">=2022.1"
+tzdata = ">=2022.7"
 
 [package.extras]
-all = ["PyQt5 (>=5.15.6)", "SQLAlchemy (>=1.4.36)", "beautifulsoup4 (>=4.11.1)", "bottleneck (>=1.3.4)", "dataframe-api-compat (>=0.1.7)", "fastparquet (>=0.8.1)", "fsspec (>=2022.05.0)", "gcsfs (>=2022.05.0)", "html5lib (>=1.1)", "hypothesis (>=6.46.1)", "jinja2 (>=3.1.2)", "lxml (>=4.8.0)", "matplotlib (>=3.6.1)", "numba (>=0.55.2)", "numexpr (>=2.8.0)", "odfpy (>=1.4.1)", "openpyxl (>=3.0.10)", "pandas-gbq (>=0.17.5)", "psycopg2 (>=2.9.3)", "pyarrow (>=7.0.0)", "pymysql (>=1.0.2)", "pyreadstat (>=1.1.5)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)", "pyxlsb (>=1.0.9)", "qtpy (>=2.2.0)", "s3fs (>=2022.05.0)", "scipy (>=1.8.1)", "tables (>=3.7.0)", "tabulate (>=0.8.10)", "xarray (>=2022.03.0)", "xlrd (>=2.0.1)", "xlsxwriter (>=3.0.3)", "zstandard (>=0.17.0)"]
-aws = ["s3fs (>=2022.05.0)"]
-clipboard = ["PyQt5 (>=5.15.6)", "qtpy (>=2.2.0)"]
-compression = ["zstandard (>=0.17.0)"]
-computation = ["scipy (>=1.8.1)", "xarray (>=2022.03.0)"]
+all = ["PyQt5 (>=5.15.9)", "SQLAlchemy (>=2.0.0)", "adbc-driver-postgresql (>=0.8.0)", "adbc-driver-sqlite (>=0.8.0)", "beautifulsoup4 (>=4.11.2)", "bottleneck (>=1.3.6)", "dataframe-api-compat (>=0.1.7)", "fastparquet (>=2022.12.0)", "fsspec (>=2022.11.0)", "gcsfs (>=2022.11.0)", "html5lib (>=1.1)", "hypothesis (>=6.46.1)", "jinja2 (>=3.1.2)", "lxml (>=4.9.2)", "matplotlib (>=3.6.3)", "numba (>=0.56.4)", "numexpr (>=2.8.4)", "odfpy (>=1.4.1)", "openpyxl (>=3.1.0)", "pandas-gbq (>=0.19.0)", "psycopg2 (>=2.9.6)", "pyarrow (>=10.0.1)", "pymysql (>=1.0.2)", "pyreadstat (>=1.2.0)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)", "python-calamine (>=0.1.7)", "pyxlsb (>=1.0.10)", "qtpy (>=2.3.0)", "s3fs (>=2022.11.0)", "scipy (>=1.10.0)", "tables (>=3.8.0)", "tabulate (>=0.9.0)", "xarray (>=2022.12.0)", "xlrd (>=2.0.1)", "xlsxwriter (>=3.0.5)", "zstandard (>=0.19.0)"]
+aws = ["s3fs (>=2022.11.0)"]
+clipboard = ["PyQt5 (>=5.15.9)", "qtpy (>=2.3.0)"]
+compression = ["zstandard (>=0.19.0)"]
+computation = ["scipy (>=1.10.0)", "xarray (>=2022.12.0)"]
 consortium-standard = ["dataframe-api-compat (>=0.1.7)"]
-excel = ["odfpy (>=1.4.1)", "openpyxl (>=3.0.10)", "pyxlsb (>=1.0.9)", "xlrd (>=2.0.1)", "xlsxwriter (>=3.0.3)"]
-feather = ["pyarrow (>=7.0.0)"]
-fss = ["fsspec (>=2022.05.0)"]
-gcp = ["gcsfs (>=2022.05.0)", "pandas-gbq (>=0.17.5)"]
-hdf5 = ["tables (>=3.7.0)"]
-html = ["beautifulsoup4 (>=4.11.1)", "html5lib (>=1.1)", "lxml (>=4.8.0)"]
-mysql = ["SQLAlchemy (>=1.4.36)", "pymysql (>=1.0.2)"]
-output-formatting = ["jinja2 (>=3.1.2)", "tabulate (>=0.8.10)"]
-parquet = ["pyarrow (>=7.0.0)"]
-performance = ["bottleneck (>=1.3.4)", "numba (>=0.55.2)", "numexpr (>=2.8.0)"]
-plot = ["matplotlib (>=3.6.1)"]
-postgresql = ["SQLAlchemy (>=1.4.36)", "psycopg2 (>=2.9.3)"]
-spss = ["pyreadstat (>=1.1.5)"]
-sql-other = ["SQLAlchemy (>=1.4.36)"]
+excel = ["odfpy (>=1.4.1)", "openpyxl (>=3.1.0)", "python-calamine (>=0.1.7)", "pyxlsb (>=1.0.10)", "xlrd (>=2.0.1)", "xlsxwriter (>=3.0.5)"]
+feather = ["pyarrow (>=10.0.1)"]
+fss = ["fsspec (>=2022.11.0)"]
+gcp = ["gcsfs (>=2022.11.0)", "pandas-gbq (>=0.19.0)"]
+hdf5 = ["tables (>=3.8.0)"]
+html = ["beautifulsoup4 (>=4.11.2)", "html5lib (>=1.1)", "lxml (>=4.9.2)"]
+mysql = ["SQLAlchemy (>=2.0.0)", "pymysql (>=1.0.2)"]
+output-formatting = ["jinja2 (>=3.1.2)", "tabulate (>=0.9.0)"]
+parquet = ["pyarrow (>=10.0.1)"]
+performance = ["bottleneck (>=1.3.6)", "numba (>=0.56.4)", "numexpr (>=2.8.4)"]
+plot = ["matplotlib (>=3.6.3)"]
+postgresql = ["SQLAlchemy (>=2.0.0)", "adbc-driver-postgresql (>=0.8.0)", "psycopg2 (>=2.9.6)"]
+spss = ["pyreadstat (>=1.2.0)"]
+sql-other = ["SQLAlchemy (>=2.0.0)", "adbc-driver-postgresql (>=0.8.0)", "adbc-driver-sqlite (>=0.8.0)"]
 test = ["hypothesis (>=6.46.1)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)"]
-xml = ["lxml (>=4.8.0)"]
+xml = ["lxml (>=4.9.2)"]
 
 [package.source]
 type = "legacy"
@@ -177,22 +177,22 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "2.0.23"
+version = "2.0.25"
 description = "Database Abstraction Library"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "SQLAlchemy-2.0.23-cp311-cp311-linux_armv6l.whl", hash = "sha256:6594c72321fdf93980b6f0b9cd2e95e7a1beb4ab75a02496a45e6f1a16251274"},
-    {file = "SQLAlchemy-2.0.23-cp311-cp311-linux_armv7l.whl", hash = "sha256:6594c72321fdf93980b6f0b9cd2e95e7a1beb4ab75a02496a45e6f1a16251274"},
-    {file = "SQLAlchemy-2.0.23-cp37-cp37m-linux_armv6l.whl", hash = "sha256:781967dc3cff363db4c9c9e2e91531f8c0d58f0cd2a8d04cb3bf3ca3f849c83b"},
-    {file = "SQLAlchemy-2.0.23-cp37-cp37m-linux_armv7l.whl", hash = "sha256:781967dc3cff363db4c9c9e2e91531f8c0d58f0cd2a8d04cb3bf3ca3f849c83b"},
-    {file = "SQLAlchemy-2.0.23-cp39-cp39-linux_armv6l.whl", hash = "sha256:0f3b272c9a7365e22179bf071ae38a1ba6d109774c846cd9a62b4cd2fb55f4fa"},
-    {file = "SQLAlchemy-2.0.23-cp39-cp39-linux_armv7l.whl", hash = "sha256:0f3b272c9a7365e22179bf071ae38a1ba6d109774c846cd9a62b4cd2fb55f4fa"},
+    {file = "SQLAlchemy-2.0.25-cp311-cp311-linux_armv6l.whl", hash = "sha256:97e55879fc74213c36bab7153c549e49e8e28a4a2139c91a9475bb9e5383603a"},
+    {file = "SQLAlchemy-2.0.25-cp311-cp311-linux_armv7l.whl", hash = "sha256:97e55879fc74213c36bab7153c549e49e8e28a4a2139c91a9475bb9e5383603a"},
+    {file = "SQLAlchemy-2.0.25-cp37-cp37m-linux_armv6l.whl", hash = "sha256:a608e703e0b93af7ac261b9d17d413757f2be16a3ca63bb905c01d25c66a4660"},
+    {file = "SQLAlchemy-2.0.25-cp37-cp37m-linux_armv7l.whl", hash = "sha256:a608e703e0b93af7ac261b9d17d413757f2be16a3ca63bb905c01d25c66a4660"},
+    {file = "SQLAlchemy-2.0.25-cp39-cp39-linux_armv6l.whl", hash = "sha256:e5fcd5f505c351f924204c2d1dab0a58a67e38465e4497b213537be557691cc4"},
+    {file = "SQLAlchemy-2.0.25-cp39-cp39-linux_armv7l.whl", hash = "sha256:e5fcd5f505c351f924204c2d1dab0a58a67e38465e4497b213537be557691cc4"},
 ]
 
 [package.dependencies]
 greenlet = {version = "!=0.4.17", markers = "platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\""}
-typing-extensions = ">=4.2.0"
+typing-extensions = ">=4.6.0"
 
 [package.extras]
 aiomysql = ["aiomysql (>=0.2.0)", "greenlet (!=0.4.17)"]
@@ -226,12 +226,12 @@ reference = "piwheels"
 
 [[package]]
 name = "typing-extensions"
-version = "4.4.0"
-description = "Backported and Experimental Type Hints for Python 3.7+"
+version = "4.9.0"
+description = "Backported and Experimental Type Hints for Python 3.8+"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:979fb485ad436c08d30192f00835e928d3029f13146107787caec5a68c4a6725"},
+    {file = "typing_extensions-4.9.0-py3-none-any.whl", hash = "sha256:8fed2a6939ccf276e2a354b8be3958e7e8ab1b9a528f208ff1202853244ada8b"},
 ]
 
 [package.source]
@@ -257,4 +257,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "a97f364170755904daa241c1ecee512437050b7787b564304f64c4c864e4b417"
+content-hash = "81f1145f46940782834f81239465f22e92b143a6cad69739886f37c7922b6836"
