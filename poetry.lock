@@ -25,15 +25,15 @@ reference = "piwheels"
 
 [[package]]
 name = "numpy"
-version = "1.26.3"
+version = "1.26.4"
 description = "Fundamental package for array computing in Python"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "numpy-1.26.3-cp311-cp311-linux_armv6l.whl", hash = "sha256:b7e9c0ab8d37f0206c3971be4224bfd77002c3763869029acf096754c42cdfe7"},
-    {file = "numpy-1.26.3-cp311-cp311-linux_armv7l.whl", hash = "sha256:b7e9c0ab8d37f0206c3971be4224bfd77002c3763869029acf096754c42cdfe7"},
-    {file = "numpy-1.26.3-cp39-cp39-linux_armv6l.whl", hash = "sha256:411d10f5630a26dfd3121dfdc7d0941239f4badeb214406264a77f2e26dbcef7"},
-    {file = "numpy-1.26.3-cp39-cp39-linux_armv7l.whl", hash = "sha256:411d10f5630a26dfd3121dfdc7d0941239f4badeb214406264a77f2e26dbcef7"},
+    {file = "numpy-1.26.4-cp311-cp311-linux_armv6l.whl", hash = "sha256:81a37a6d46f316f63b79f58865068410ff7a9e6bc37555c7600f1f608d7872fc"},
+    {file = "numpy-1.26.4-cp311-cp311-linux_armv7l.whl", hash = "sha256:81a37a6d46f316f63b79f58865068410ff7a9e6bc37555c7600f1f608d7872fc"},
+    {file = "numpy-1.26.4-cp39-cp39-linux_armv6l.whl", hash = "sha256:664008f1f01915d163caa021a2324f20c63e0d18f434a811a69ae2e24d322618"},
+    {file = "numpy-1.26.4-cp39-cp39-linux_armv7l.whl", hash = "sha256:664008f1f01915d163caa021a2324f20c63e0d18f434a811a69ae2e24d322618"},
 ]
 
 [package.source]
@@ -43,15 +43,15 @@ reference = "piwheels"
 
 [[package]]
 name = "pandas"
-version = "2.2.0"
+version = "2.2.1"
 description = "Powerful data structures for data analysis, time series, and statistics"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "pandas-2.2.0-cp311-cp311-linux_armv6l.whl", hash = "sha256:7a14f94710a4aa13973eda2371c97d1bebd88a7ffc09744d0625b124236e94db"},
-    {file = "pandas-2.2.0-cp311-cp311-linux_armv7l.whl", hash = "sha256:7a14f94710a4aa13973eda2371c97d1bebd88a7ffc09744d0625b124236e94db"},
-    {file = "pandas-2.2.0-cp39-cp39-linux_armv6l.whl", hash = "sha256:03c1ec8de770a0891b66623b6240160980e7511a7c20fa846c283d4e54f12f9f"},
-    {file = "pandas-2.2.0-cp39-cp39-linux_armv7l.whl", hash = "sha256:03c1ec8de770a0891b66623b6240160980e7511a7c20fa846c283d4e54f12f9f"},
+    {file = "pandas-2.2.1-cp311-cp311-linux_armv6l.whl", hash = "sha256:9cd0590a5e0420c64ebdaae7145d26bccffd41e054e11408cecb5ef4805be2fd"},
+    {file = "pandas-2.2.1-cp311-cp311-linux_armv7l.whl", hash = "sha256:9cd0590a5e0420c64ebdaae7145d26bccffd41e054e11408cecb5ef4805be2fd"},
+    {file = "pandas-2.2.1-cp39-cp39-linux_armv6l.whl", hash = "sha256:665cacac78c166453db7cc2df87205c6018b43abbe8c85258d37134e06438715"},
+    {file = "pandas-2.2.1-cp39-cp39-linux_armv7l.whl", hash = "sha256:665cacac78c166453db7cc2df87205c6018b43abbe8c85258d37134e06438715"},
 ]
 
 [package.dependencies]
@@ -79,6 +79,7 @@ parquet = ["pyarrow (>=10.0.1)"]
 performance = ["bottleneck (>=1.3.6)", "numba (>=0.56.4)", "numexpr (>=2.8.4)"]
 plot = ["matplotlib (>=3.6.3)"]
 postgresql = ["SQLAlchemy (>=2.0.0)", "adbc-driver-postgresql (>=0.8.0)", "psycopg2 (>=2.9.6)"]
+pyarrow = ["pyarrow (>=10.0.1)"]
 spss = ["pyreadstat (>=1.2.0)"]
 sql-other = ["SQLAlchemy (>=2.0.0)", "adbc-driver-postgresql (>=0.8.0)", "adbc-driver-sqlite (>=0.8.0)"]
 test = ["hypothesis (>=6.46.1)", "pytest (>=7.3.2)", "pytest-xdist (>=2.2.0)"]
@@ -177,17 +178,17 @@ reference = "piwheels"
 
 [[package]]
 name = "sqlalchemy"
-version = "2.0.25"
+version = "2.0.27"
 description = "Database Abstraction Library"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "SQLAlchemy-2.0.25-cp311-cp311-linux_armv6l.whl", hash = "sha256:97e55879fc74213c36bab7153c549e49e8e28a4a2139c91a9475bb9e5383603a"},
-    {file = "SQLAlchemy-2.0.25-cp311-cp311-linux_armv7l.whl", hash = "sha256:97e55879fc74213c36bab7153c549e49e8e28a4a2139c91a9475bb9e5383603a"},
-    {file = "SQLAlchemy-2.0.25-cp37-cp37m-linux_armv6l.whl", hash = "sha256:a608e703e0b93af7ac261b9d17d413757f2be16a3ca63bb905c01d25c66a4660"},
-    {file = "SQLAlchemy-2.0.25-cp37-cp37m-linux_armv7l.whl", hash = "sha256:a608e703e0b93af7ac261b9d17d413757f2be16a3ca63bb905c01d25c66a4660"},
-    {file = "SQLAlchemy-2.0.25-cp39-cp39-linux_armv6l.whl", hash = "sha256:e5fcd5f505c351f924204c2d1dab0a58a67e38465e4497b213537be557691cc4"},
-    {file = "SQLAlchemy-2.0.25-cp39-cp39-linux_armv7l.whl", hash = "sha256:e5fcd5f505c351f924204c2d1dab0a58a67e38465e4497b213537be557691cc4"},
+    {file = "SQLAlchemy-2.0.27-cp311-cp311-linux_armv6l.whl", hash = "sha256:a304533aa896f00e1d1d271b58331e2b9adea29a3e97df3cf27cd41524122a98"},
+    {file = "SQLAlchemy-2.0.27-cp311-cp311-linux_armv7l.whl", hash = "sha256:a304533aa896f00e1d1d271b58331e2b9adea29a3e97df3cf27cd41524122a98"},
+    {file = "SQLAlchemy-2.0.27-cp37-cp37m-linux_armv6l.whl", hash = "sha256:77d3d832b9baf2747e8b5723c5d65769bf565b53e8bd58bb983a91987fea97ba"},
+    {file = "SQLAlchemy-2.0.27-cp37-cp37m-linux_armv7l.whl", hash = "sha256:77d3d832b9baf2747e8b5723c5d65769bf565b53e8bd58bb983a91987fea97ba"},
+    {file = "SQLAlchemy-2.0.27-cp39-cp39-linux_armv6l.whl", hash = "sha256:2c5428f28874d4807466b48207f62be5f29b49920d7aa7897b12472689c323a0"},
+    {file = "SQLAlchemy-2.0.27-cp39-cp39-linux_armv7l.whl", hash = "sha256:2c5428f28874d4807466b48207f62be5f29b49920d7aa7897b12472689c323a0"},
 ]
 
 [package.dependencies]
@@ -257,4 +258,4 @@ reference = "piwheels"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.11"
-content-hash = "81f1145f46940782834f81239465f22e92b143a6cad69739886f37c7922b6836"
+content-hash = "eaa1d82d60c0e967a45f469746382e44aa217a6af5a6885353f442d5aadc2208"
