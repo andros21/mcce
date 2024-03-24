@@ -11,7 +11,7 @@ updates:
     reviewers:
       - "andros21"
     groups:
-      poetry:
+      pip:
         patterns:
           - "*"
         update-types:
