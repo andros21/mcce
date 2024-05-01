@@ -10,7 +10,7 @@ numpy==1.26.4
     # via
     #   -r requirements.in
     #   pandas
-pandas==2.2.1
+pandas==2.2.2
     # via -r requirements.in
 psycopg2==2.9.9
     # via -r requirements.in
