@@ -54,10 +54,10 @@ def resample_df(date, df, tsize, res):
     resolution, instead of 5 seconds resolution
     """
     di = pd.to_datetime(f'{date.strftime("%Y-%m-%d")} 00:00:00') + pd.to_timedelta(
-        np.arange(0, tsize * 5, 5), "S"
+        np.arange(0, tsize * 5, 5), "s"
     )
     df = pd.DataFrame(df[0].values.tolist(), index=di, columns=["Wh"])
-    df = np.around(df.resample(f"{res*60}S").mean(), 2)
+    df = np.around(df.resample(f"{res*60}s").mean(), 2)
     return df
 
 
@@ -79,7 +79,6 @@ def refresh_db(uri, date, df, davg):
 
 
 if __name__ == "__main__":
-
     fixed_day_size = 17281  # expected day file lines
     cdate = datetime.datetime.now()  # today date
     db_uri = os.environ["DATABASE_URL"].replace(
