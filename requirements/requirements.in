@@ -2,7 +2,7 @@
 # ===============
 
 psycopg2==2.9.9
-numpy==2.1.0
-pandas==2.2.2
+numpy==2.1.1
+pandas==2.2.3
 pyserial==3.5
-sqlalchemy==2.0.32
+sqlalchemy==2.0.35

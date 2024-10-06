@@ -6,11 +6,11 @@
 #
 greenlet==3.0.3
     # via sqlalchemy
-numpy==2.1.0
+numpy==2.1.1
     # via
     #   -r requirements.in
     #   pandas
-pandas==2.2.2
+pandas==2.2.3
     # via -r requirements.in
 psycopg2==2.9.9
     # via -r requirements.in
@@ -22,7 +22,7 @@ pytz==2024.1
     # via pandas
 six==1.16.0
     # via python-dateutil
-sqlalchemy==2.0.32
+sqlalchemy==2.0.35
     # via -r requirements.in
 typing-extensions==4.10.0
     # via sqlalchemy
