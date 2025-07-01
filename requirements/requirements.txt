@@ -6,11 +6,11 @@
 #
 greenlet==3.0.3
     # via sqlalchemy
-numpy==2.2.6
+numpy==2.3.1
     # via
     #   -r requirements.in
     #   pandas
-pandas==2.2.3
+pandas==2.3.0
     # via -r requirements.in
 psycopg2==2.9.10
     # via -r requirements.in
