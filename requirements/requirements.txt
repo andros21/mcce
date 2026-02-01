@@ -10,7 +10,7 @@ numpy==2.4.2
     # via
     #   -r requirements.in
     #   pandas
-pandas==2.3.3
+pandas==3.0.0
     # via -r requirements.in
 psycopg2==2.9.11
     # via -r requirements.in
@@ -18,13 +18,9 @@ pyserial==3.5
     # via -r requirements.in
 python-dateutil==2.9.0.post0
     # via pandas
-pytz==2024.1
-    # via pandas
 six==1.16.0
     # via python-dateutil
 sqlalchemy==2.0.46
     # via -r requirements.in
 typing-extensions==4.10.0
     # via sqlalchemy
-tzdata==2024.1
-    # via pandas
