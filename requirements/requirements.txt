@@ -20,7 +20,7 @@ python-dateutil==2.9.0.post0
     # via pandas
 six==1.16.0
     # via python-dateutil
-sqlalchemy==2.0.51
+sqlalchemy==2.0.52
     # via -r requirements.in
 typing-extensions==4.10.0
     # via sqlalchemy
