@@ -4,15 +4,13 @@
 #
 #    pip-compile --output-file=requirements.txt requirements.in
 #
-greenlet==3.0.3
-    # via sqlalchemy
 numpy==2.4.6
     # via
     #   -r requirements.in
     #   pandas
-pandas==3.0.5
+pandas==3.0.6
     # via -r requirements.in
-psycopg2==2.9.12
+psycopg2==2.9.13
     # via -r requirements.in
 pyserial==3.5
     # via -r requirements.in
@@ -20,7 +18,7 @@ python-dateutil==2.9.0.post0
     # via pandas
 six==1.16.0
     # via python-dateutil
-sqlalchemy==2.0.52
+sqlalchemy==2.1.1
     # via -r requirements.in
 typing-extensions==4.10.0
     # via sqlalchemy
